@@ -26,4 +26,11 @@ public class Dispositivo {
         }
         return  "El Dispositivo no estaba prendido";
     }
+
+    public String mostrarInformacion(){
+        String estados= estado?"Prendido": "Apagado";
+        return "Codigo: " + codigo +
+                "\nMarca: " + marca +
+                "\nEstado: " + estados;
+    }
 }
