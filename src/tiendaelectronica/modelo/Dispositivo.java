@@ -11,6 +11,18 @@ public class Dispositivo {
         estado = false;
     }
 
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
     public String prender(){
         if(estado == false){
             estado = true;
