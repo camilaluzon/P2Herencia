@@ -9,15 +9,17 @@ public class Computador extends Dispositivo{
     }
 
     public boolean ejecutarPrograma(String nombre){
-        if(nombre != null && !nombre.trim().isEmpty(){
+        if(nombre != null && !nombre.trim().isEmpty()){
             if(isEstado()){
                 return true;
             }
         }
         return false;
     }
+
     @Override
     public String mostrarInformacion(){
         return super.mostrarInformacion()+"\nRAM: " + RAM;
     }
 }
+
